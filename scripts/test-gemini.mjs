@@ -9,7 +9,7 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+const model = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 const prompt = process.argv.slice(2).join(" ") || "Dis bonjour en une phrase.";
 
 const res = await fetch(
